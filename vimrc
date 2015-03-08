@@ -1,3 +1,13 @@
+set nocompatible
+filetype off
+
+" Run Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'elzr/vim-json'
+call vundle#end()
+
+" Vundle is done. Carry on.
 syntax on
 filetype plugin indent on
 
