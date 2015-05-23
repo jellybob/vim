@@ -8,10 +8,13 @@ Plugin 'elzr/vim-json'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mxw/vim-jsx'
 Plugin 'kien/ctrlp.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'ntpeters/vim-better-whitespace'
 call vundle#end()
 
 " Vundle is done. Carry on.
@@ -35,6 +38,8 @@ highlight clear SignColumn
 
 let mapleader=","
 map <Leader>p :CtrlP<CR>
+map <Leader>r :!ruby %<CR>
+map <Leader>s :!rspec %<CR>
 let g:ctrlp_user_command = [ '.git', 'cd %s && git ls-files . -co --exclude-standard' ]
 
 " Map jk to Esc for super fast escaping
