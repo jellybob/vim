@@ -5,16 +5,24 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'elzr/vim-json'
+Plugin 'elixir-lang/vim-elixir'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
-Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mxw/vim-jsx'
+Plugin 'mattn/emmet-vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'Yggdroot/indentLine'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'othree/yajs.vim' " Javascript highlighting
+Plugin 'othree/eregex.vim'
+Plugin 'lambdatoast/elm.vim'
+Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 
 " Vundle is done. Carry on.
@@ -25,12 +33,17 @@ set tabstop=2
 set shiftwidth=2
 set laststatus=2
 set expandtab
+set smartindent
 
 " Allow changing buffers without saving
 set hidden
 
 " Bash style tab completion
 set wildmode=longest,list
+
+" Use a posix compliant shell internally as plugins
+" expect one.
+set shell=bash
 
 set mouse=a
 set number
