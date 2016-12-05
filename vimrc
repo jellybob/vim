@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 
 " Run Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'elzr/vim-json'
 Plugin 'elixir-lang/vim-elixir'
